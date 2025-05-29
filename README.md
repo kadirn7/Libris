@@ -1,6 +1,6 @@
 # 📚 LIBRIS - Library Management System
 
-Libris is a full-featured library management system built with Spring Boot 3 and Java 21, developed for the **Patika.dev & Getir Java Spring Boot Bootcamp**. It offers RESTful APIs for managing books, users, borrow/return operations, and supports real-time features and scoring-based logic.
+Libris is a full-featured library management system built with Spring Boot 3 and Java 21. It offers RESTful APIs for managing books, users, borrow/return operations, and supports real-time features and scoring-based logic.
 
 ---
 
