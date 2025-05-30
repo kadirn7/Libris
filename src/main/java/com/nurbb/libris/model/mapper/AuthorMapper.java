@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", imports = {Collectors.class})
 public interface AuthorMapper {
 
     @Mapping(target = "createdDate", ignore = true)
@@ -22,7 +22,7 @@ public interface AuthorMapper {
     AuthorResponse toResponse(Author author);
 
     @Named("mapBooksToNames")
-    static Set<String> mapBooksToNames(List<Book> books) {
+    default Set<String> mapBooksToNames(List<Book> books) {
         if (books == null) return Set.of();
         return books.stream()
                 .map(Book::getTitle)
